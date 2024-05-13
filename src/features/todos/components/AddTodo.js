@@ -15,7 +15,11 @@ export const AddTodo = () => {
     // delete spaces
     const trimmedTask = task.trim();
     // If the user pressed the Enter key:
-    if (e.which === 13 && trimmedTask) {
+    if (e.which === 13) {
+      if (!trimmedTask) {
+        alert("Task can not be empty");
+        return;
+      }
       const trimmedDescription = taskDescription.trim();
       dispatch(
         todoAdded({ task: trimmedTask, description: trimmedDescription })

@@ -30,7 +30,11 @@ export const MemoListItem = memo(function TodoListItem({ id }) {
         <Checkbox isChecked={isDone} onChange={handleIsDoneChanged} />
         <div className="todo-text">
           <div className={taskClass}> TASK: {task}</div>
-          <div className="todo-description"> description: {description} </div>
+          {description ? (
+            <div className="todo-description"> description: {description} </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className="segment buttons">

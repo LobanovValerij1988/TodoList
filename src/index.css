@@ -197,7 +197,9 @@ main h2 {
   display: flex;
   text-align: left;
   flex-direction: column;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .todoapp input::input-placeholder,
@@ -213,6 +215,7 @@ main h2 {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  border-bottom: 5px solid red;
 }
 
 .todoapp header.header .loader {

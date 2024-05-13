@@ -5,8 +5,7 @@ import {
 } from "../helpers/localStorageHelpers";
 
 export function getAllTodoes() {
-  //next line for development purpose if you need to force clearing of localStorage
-  //localStorage.clear();
+  localStorage.clear();
 
   // check if there any data  in our todolist localStorage if not seeding it
   if (localStorage.length === 0) {

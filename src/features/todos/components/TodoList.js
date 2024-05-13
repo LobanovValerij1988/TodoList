@@ -10,7 +10,7 @@ export const TodoList = () => {
   return todoIds.map((id) => {
     return (
       <li key={id}>
-        <MemoListItem id={id} />
+        <MemoListItem key={id} id={id} />
       </li>
     );
   });
