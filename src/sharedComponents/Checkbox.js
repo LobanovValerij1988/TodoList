@@ -1,10 +1,10 @@
-export const Checkbox = ({isChecked, onChange}) => {
+export const Checkbox = ({ isChecked, onChange }) => {
   return (
     <input
-    className="toggle"
-    type="checkbox"
-    checked={isChecked}
-    onChange={onChange}
-  />
-  )
-}
+      className="toggle"
+      type="checkbox"
+      checked={isChecked}
+      onChange={onChange}
+    />
+  );
+};
