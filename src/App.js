@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import "./App.css";
-import { TodoList } from "./features/todos/components/TodoList";
-import { AddTodo } from "./features/todos/components/AddTodo";
-import { Header } from "./sharedComponents/Header";
+import './App.css';
+import { TodoList } from './features/todos/components/TodoList';
+import { AddTodo } from './features/todos/components/AddTodo';
+import { Header } from './sharedComponents/Header';
 
 function App() {
   return (
